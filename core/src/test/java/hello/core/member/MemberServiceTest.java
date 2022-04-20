@@ -1,6 +1,6 @@
 package hello.core.member;
 
-import hello.core.AppCofing;
+import hello.core.AppConfing;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ public class MemberServiceTest {
 
     @BeforeEach
     void beforeEach(){
-        AppCofing appCofing = new AppCofing();
+        AppConfing appCofing = new AppConfing();
         memberService = appCofing.memberService();
     }
 

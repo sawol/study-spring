@@ -10,7 +10,7 @@ public class MemberApp {
     public static void main(String[] args) {
 //        AppCofing appCofing = new AppCofing();
 //        MemberService memberService = appCofing.memberService();
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfing.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 
         Member member = new Member(1L, "memberA", Grade.VIP);

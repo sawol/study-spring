@@ -1,6 +1,6 @@
 package hello.core.order;
 
-import hello.core.AppConfing;
+import hello.core.AppConfig;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
@@ -15,7 +15,7 @@ public class OrderServiceTest {
 
     @BeforeEach
     void beforeEach(){
-        AppConfing appCofing = new AppConfing();
+        AppConfig appCofing = new AppConfig();
         memberService = appCofing.memberService();
         orderService = appCofing.orderService();
     }
